@@ -8,10 +8,10 @@
 - Needed for main functions of the ATM.
 # RFID card reader module for Arduino, with an RFID card and a keychain
 ![RFID reader](https://m.media-amazon.com/images/I/516ZXyrx6wL._SL1000_.jpg)
--[Amazon link](https://www.amazon.in/Robodo-Electronics-SEN13-MFRC-522-Raspberry/dp/B0787GT4H4)
+- [Amazon link](https://www.amazon.in/Robodo-Electronics-SEN13-MFRC-522-Raspberry/dp/B0787GT4H4)
 - Price: ₹220
 - Needed for scanning (fake) "debit" cards.
 
-#Total
+# Total
 - The current total is:
-	-₹840
+	- ₹840
