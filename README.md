@@ -1,9 +1,11 @@
 # Introduction
 This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.
 
-## Files
-This is the [`README.md`](/README.md).
-The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
+## Files & Folders
+- This is the [`README.md`](/README.md).
+- The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
+- The [AI folder](/AI/) is for files concerning AI related to topics.
+- The [ATM folder](/ATM/) is for files concerning AI related to topics
 
 # A few Instructions
 - First of all, sign in to [GitHub](https://github.com). I hope you know how to do that.
