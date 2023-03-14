@@ -10,7 +10,7 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 - In all these folders, there will be filler files named `filler`. You may remove them after you create atleast one other file in that folder.
   
 # A few Instructions
-- First of all, sign in to [GitHub](https://github.com). I hope you now how to do that.
+- First of all, sign in to [GitHub](https://github.com). I hope you know how to do that.
 - Then, you may go [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) and navigate using the pane on the left side, and go through everything until you understand. Make sure to visit [this](https://docs.github.com/en/get-started/quickstart/contributing-to-projects), as it will be the thing you will be doing the most.
 - Some additional resources:
 	- https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/ (no need to do the `git` part, you can just use the web version of github.)
