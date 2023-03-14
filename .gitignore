@@ -3,3 +3,5 @@
 /.user
 /build
 *.ignore
+.swp
+*.swp
