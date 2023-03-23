@@ -1,7 +1,8 @@
 # Introduction
-This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.
+This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School. fssdf
 
 ## Files & Folders
+- ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project.
 - This is the [`README.md`](/README.md).
 - The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
 - The [`AI` folder](/AI/) is for files concerning AI, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
@@ -18,5 +19,35 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 	- just try and be curious about all the things and you can even ask me, either here, using issues, or personally.
 - For the MarkDown (.md file special formatting), you can use [this](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for help.
 
+# Workflow
+- This section describes the intended workflow for our project.
+- This is the main repository, which is to be used and presented.
+- To make changes, you need to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+- By defualt, the name of the forked repository will be the same as the main one, which is `cs-exhibition`. You need to change this name to `cs-exhibition-yourname`, for example `cs-exhibition-raj`. This is to be done to make it easier to identify the owner of the repository.
+- After you make major changes, and commits and test them and think that they are suitable and stable enough for merging, [create a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request).
+- Wait for me (the maintainer and owner of the repo) to review these changes, make changes, if needed, and merge (accept) or reject your pull request.
+
+# Guidelines for code stylization
+- For indentation, use tabs, instead of spaces. You can search how to enable this on the internet.
+- In braced languages like java, javascript and CSS, put braces on the same line.
+- Example:
+```
+function myfunc() {
+	console.log("hello")
+}
+```
+- ⬆ This is recommended.
+```
+function myfunc()
+{
+	console.log("hello")
+}
+```
+- ⬆ This is not recommended.
+- Use [camelCase](https://en.wikipedia.org/wiki/Camel_case) for identifiers. For example:
+	- `helloWorld` <-- is recommended
+	- basically first letter of first word lowercase, later word's initial uppercase.
+- Comment your code thoroughly. This doesn't mean that you comment every single line. Commenting for things like variable declaration is useless; everyone can understand that much; Comment more complex parts of codes or for explanation of the use of a function, etc.
+
 # License
-Everything here is licensed under GPL v3. If someone has an issue with that, they can create a pull request or create an issue with a reason.
+Everything here is licensed under GPLv3. If someone has an issue with that, they can create a pull request or create an issue with a reason.
