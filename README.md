@@ -38,7 +38,7 @@ function myFunc() {
 ```
 - ⬆ This is recommended.
 ```
-function myunc()
+function myfunc()
 {
 	console.log("hello")
 }
