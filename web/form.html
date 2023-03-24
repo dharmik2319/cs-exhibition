@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="index.css"
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="editor">some text</div>
+    <script src="misc/ace/ace.js" type="text/javascript" charset="utf-8">
+
+    </script>
+<script>
+    var editor = ace.edit("editor");
+</script>
+    <script src="misc/ace/theme-github.js" type="text/javascript" charset="utf-8">
+	    editor.setTheme("ace/theme/github");
+    </script>
+    <script src="misc/ace/mode/mode-html.js" type="text/javascript" charset="utf-8">
+	    var JavaScriptMode = ace.require("ace/mode/javascript").Mode;
+editor.session.setMode(new JavaScriptMode());
+    </script>
     <title>Feedback Form</title>
 </head>
 <body>
