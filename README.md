@@ -32,13 +32,13 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 - In braced languages like java, javascript and CSS, put braces on the same line.
 - Example:
 ```
-function myfunc() {
-	console.log("hello")
+function myFunc() {
+	console.log("Hello")
 }
 ```
 - ⬆ This is recommended.
 ```
-function myfunc()
+function myunc()
 {
 	console.log("hello")
 }
