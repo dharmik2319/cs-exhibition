@@ -1,14 +1,8 @@
 # Introduction
-<<<<<<< HEAD
-This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.
-
-## Files & Folders
-=======
 This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School. fssdf
 
 ## Files & Folders
 - ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project.
->>>>>>> 36b07299613569f860388fdeb966808144684314
 - This is the [`README.md`](/README.md).
 - The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
 - The [`AI` folder](/AI/) is for files concerning AI, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
@@ -17,11 +11,7 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 - In all these folders, there will be filler files named `filler`. You may remove them after you create atleast one other file in that folder.
   
 # A few Instructions
-<<<<<<< HEAD
-- First of all, sign in to [GitHub](https://github.com). I hope you now how to do that.
-=======
 - First of all, sign in to [GitHub](https://github.com). I hope you know how to do that.
->>>>>>> 36b07299613569f860388fdeb966808144684314
 - Then, you may go [here](https://docs.github.com/en/get-started/quickstart/create-a-repo) and navigate using the pane on the left side, and go through everything until you understand. Make sure to visit [this](https://docs.github.com/en/get-started/quickstart/contributing-to-projects), as it will be the thing you will be doing the most.
 - Some additional resources:
 	- https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/ (no need to do the `git` part, you can just use the web version of github.)
@@ -29,10 +19,6 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 	- just try and be curious about all the things and you can even ask me, either here, using issues, or personally.
 - For the MarkDown (.md file special formatting), you can use [this](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for help.
 
-<<<<<<< HEAD
-# License
-Everything here is licensed under GPL v3. If someone has an issue with that, they can create a pull request or create an issue with a reason.
-=======
 # Workflow
 - This section describes the intended workflow for our project.
 - This is the main repository, which is to be used and presented.
@@ -65,4 +51,3 @@ function myfunc()
 
 # License
 Everything here is licensed under GPLv3. If someone has an issue with that, they can create a pull request or create an issue with a reason.
->>>>>>> 36b07299613569f860388fdeb966808144684314
