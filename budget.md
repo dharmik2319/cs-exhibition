@@ -11,6 +11,11 @@
 - [Amazon link](https://www.amazon.in/Robodo-Electronics-SEN13-MFRC-522-Raspberry/dp/B0787GT4H4)
 - Price: ₹220
 - Needed for scanning (fake) "debit" cards.
+# Micro Tactile Switches
+![Tactile Switches](https://m.media-amazon.com/images/I/31yo5Ak+PgL.jpg)
+- [Amazon link](https://www.amazon.in/Tactile-momentry-button-Switch-Button/dp/B07NCZ1NHD)
+- Price: ₹90
+- Needed for the keys of the instrument
 
 # Total
 - The current total is:
