@@ -37,7 +37,8 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 function myFunc() {
 	console.log("Hello")
 }
-``` - ⬆ This is recommended.
+``` 
+- ⬆ This is recommended.
 ```javascript
 function myfunc()
 {
