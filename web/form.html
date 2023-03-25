@@ -7,35 +7,51 @@
     <title>Feedback Form</title>
     <style type="text/css" media="screen">
     #editor {
-	position: relative;
-	top: 10;
-	left: 10;
-	right: 10;
-	bottom: 10;
-	min-height: 50;
-	min-width: 50;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: 20;
     }
+    #editorContainer {
+	    min-width: 200px;
+	    min-height: 100px;
+	    position: relative;
+	    background-color: red;
+	    padding-bottom: 200px;
+	    border-radius: 20;
+}
 </style>
 </head>
 <body>
-	<div id="editor">function foo(items) {
-    var x = "All this is syntax highlighted";
-    return x;
-}
+	<div id="editorContainer">
+	<div id="editor">
 	</div>
-	<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+	<script src="ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/twilight");
     editor.session.setMode("ace/mode/html");
 	editor.setReadOnly(true);
+	function fetchHtml() {
+  fetch('form.html')
+  .then((response) => {
+    return response.text();
+  })
+  .then((html) => {
+    editor.setValue(html)     
+  });
+}
+	window.onload = fetchHtml();
+	
 </script>
 <div>
-    <img src="img/html_form_code.jpg"> 
 
     <br> <br>
 
-    output:
+    outputs:
 
     <br> <br>
 
