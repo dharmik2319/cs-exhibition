@@ -33,13 +33,12 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 - For indentation, use tabs, instead of spaces. You can search how to enable this on the internet.
 - In braced languages like java, javascript and CSS, put braces on the same line.
 - Example:
-```
+```javascript
 function myFunc() {
 	console.log("Hello")
 }
-```
-- ⬆ This is recommended.
-```
+``` - ⬆ This is recommended.
+```javascript
 function myfunc()
 {
 	console.log("hello")
