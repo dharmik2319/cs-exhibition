@@ -19,4 +19,4 @@
 
 # Total
 - The current total is:
-	- ₹840
+	- ₹930
