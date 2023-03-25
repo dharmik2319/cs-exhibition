@@ -1,9 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-#editor {
-    position: absolute;
-    width: 500px;
-    height: 400px;
+    #editor {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: 20;
+	    }
+    #editorContainer {
+	    min-width: 200px;
+	    min-height: 100px;
+	    position: relative;
+	    background-color: red;
+	    padding-bottom: 200px;
+	    border-radius: 20;
 }
-
