@@ -28,6 +28,7 @@ function fetchHtml() {
 function putLines(lines) {
 	editor.setOption("maxLines", lines);
 }
+editor.setFontSize(13);
 /* abandon all hope if you wish to understand this
  * dont touch it as well, if it aint broke, dont fix it*/
 function resolveAfter2Seconds() {
@@ -42,7 +43,6 @@ async function asyncCall() {
   fetchHtml();
   const result = await resolveAfter2Seconds();
   putLines(editor.getValue().match(/\n/g).length + 1);  // Expected output: "resolved"
-  document.getElementById('editor').style.fontSize='13px';
 }
 
 asyncCall();
