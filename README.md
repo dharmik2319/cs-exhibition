@@ -1,5 +1,5 @@
 # Introduction
-This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School. fssdf
+This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.
 
 ## Files & Folders
 - ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project.
