@@ -16,7 +16,20 @@ makeAceEditorResizable(aceEditorInstance);
 
 
 function fetchHtml() {
-	fetch(window.location.href)
+	if (window.location.href.includes("company_src")) {
+			urlink = 'company.html'
+		fetch(urlink)
+		.then((response) => {
+			return response.text();
+		})
+		.then((html) => {
+			editor.setValue(html)
+		})
+}
+
+	else {
+			urlink = window.location.href
+		fetch(urlink)
 		.then((response) => {
 			return response.text();
 		})
@@ -24,6 +37,7 @@ function fetchHtml() {
 			editor.setValue(html)
 		})
 
+	}
 }
 
 function putLines(lines) {
