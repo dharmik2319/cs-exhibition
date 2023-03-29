@@ -4,7 +4,7 @@ on:
     branches: ["main"]
 jobs:
   repo-sync:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}    
     steps:
     - uses: actions/checkout@v2
       with:
