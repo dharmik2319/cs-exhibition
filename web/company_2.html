@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example website</title>
 </head>
-<body class="overflow-y-hidden">
+<body>
     <div class="bg-gradient-to-br from-sky-500 via-fuchsia-300 to-fuchsia-300 ">
 		<nav class="text-white flex justify-between">
-			<span class="text-2xl py-4 px-3 font-extrabold font-mono hover:text-black hover:text-3xl transition-all duration-100"><a href="index.html">Your |
+			<span class="text-2xl py-4 px-3 font-extrabold font-mono hover:text-black"><a href="index.html">Your |
 					Company</a></span>
 			<ul class="px-28 py-4 flex space-x-11 text-white font-bold justify-end">
-				<li class="cursor-pointer hover:text-gray-800 text-2xl"><a href="company.html"><button class="flex rounded-full bg-sky-500 border-solid border-black border-2 px-3 py-1 transition-all duration-100"><img src="img/left-arrow.svg" class="h-8 w-auto pr-1">Back</button></a></li>
+				<li class="cursor-pointer hover:text-gray-800 text-2xl"><a href="company.html"><button class="flex rounded-full bg-sky-500 border-solid border-black border-2 px-3 py-1"><img src="img/left-arrow.svg" class="h-8 w-auto pr-1">Back</button></a></li>
 			</ul>
 		</nav>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -23,16 +23,11 @@
 		</svg>
 	</div>
     <div id="external_links" class="flex justify-center h-[400px] w-[100%]">
-        <div id="staff_txt" class="flex text-xl font-mono font-bold h-48 w-[95%] border-solid border-black border-2 rounded-lg bg-gradient-to-br from-sky-300 to-fuchsia-100">
+        <div id="staff_txt" class="flex text-xl font-mono font-bold h-96 w-[95%] border-solid border-black border-2 rounded-lg bg-gradient-to-br from-sky-300 to-fuchsia-100">
             <div class="h-4 w-4 bg-[#232629] m-8 rounded-full"></div>
-            <div id="code_css" class="text-4xl h-12 w-auto text-[#232629] font-bold font-mono my-5 transition-colors duration-500 hover:text-purple-500"><a href="company_src_css.html">Source Code(CSS)</a></div>
-            <div class="h-4 w-4 bg-[#232629] mt-20 relative right-[365px] rounded-full"></div>
-            <div id="code_js" class="text-4xl text-[#232629] mt-16 right-[335px] font-bold relative font-mono my-5 h-12 w-auto transition-colors duration-500 hover:text-purple-500"><a href="company_src_js.html">Source Code(JS)</a></div>
-            <div class="h-4 w-4 bg-[#232629] -mx-[266px] mt-32 right-[412px] relative rounded-full"></div>
-            <div id="without_css" class="text-4xl text-[#232629] font-bold relative mt-28 right-[415px] font-mono mx-[300px] transition-colors duration-500 hover:text-purple-500 my-[68px] h-12 w-auto"><a href="company_noCss.html">Without CSS</a></div>
             <div id="code" class="text-4xl text-[#232629] font-bold font-mono my-5"><a href="company_src.html">Source Code</a></div>
             <div class="h-4 w-4 bg-[#232629] -mx-[266px] my-20 rounded-full"></div>
-            <div id="without_css" class="text-4xl text-[#232629] font-bold font-mono mx-[300px] my-[68px]"><a href="company_noCss.html">Without CSS</a></div>
+						<div id="without_css" class="text-4xl text-[#232629] font-bold font-mono mx-[300px] my-[68px]"><a onclick="noCSS()" id="without_css" href="company_noCss.html">Without CSS</a></div>
         </div>
     </div>
 </body>
