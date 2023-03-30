@@ -29,3 +29,9 @@ a {
 a:hover {
 	color: purple;
 }
+img {
+		transition: scale 1s;
+}
+img:hover {
+		scale: 1.2;
+}
