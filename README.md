@@ -9,6 +9,7 @@ This is the repository for 8th Standard Computer Exhibition projects at Saint Pa
 - The [`ATM` folder](/ATM/) is for files concerning the ATM project, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
 - The [`web` folder](/ATM/) is for files concerning the web portion (html, css & js), so you may put appropriate files in those folers (by forking the repo and creating a pull request).
 - In all these folders, there will be filler files named `filler`. You may remove them after you create atleast one other file in that folder.
+- You can see a preview of the planned site [here](dharmik2319.github.io).
   
 # A few Instructions
 - First of all, sign in to [GitHub](https://github.com). I hope you know how to do that.
