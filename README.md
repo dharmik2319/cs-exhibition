@@ -2,7 +2,7 @@
 This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.  
 
 ## Files & Folders
-- ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project.
+- ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project. 
 - This is the [`README.md`](/README.md).
 - The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
 - The [`AI` folder](/AI/) is for files concerning AI, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
