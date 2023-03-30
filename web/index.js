@@ -19,7 +19,8 @@ function fetchHtml() {
 		if (window.location.href.includes("company_src") {
 				urlink = 'company.html'
 		} else {
-					urlink = window.location.href}
+				urlink = window.location.href
+		}
 	fetch(window.location.href)
 		.then((response) => {
 			return response.text();
