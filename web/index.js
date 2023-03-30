@@ -21,7 +21,7 @@ function fetchHtml() {
 		} else {
 				urlink = window.location.href
 		}
-	fetch(window.location.href)
+	fetch(urlink)
 		.then((response) => {
 			return response.text();
 		})
