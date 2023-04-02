@@ -32,6 +32,10 @@ a:hover {
 img {
 		transition: scale 1s;
 }
+img.complogo{
+	position: relative;
+	margin-right: 15px;
+}
 img:hover {
 		scale: 1.2;
 }
