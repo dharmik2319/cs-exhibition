@@ -8,16 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Computer Exhibition 2023</title>
+    <style>
+        .slide {
+            transition: 1s;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- HTML:  -->
-    <div id="html">
-        <div id="html_Heading"
-            class="flex justify-center bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-600 text-white font-mono font-extrabold border-4 border-solid border-black">
-            <p class="text-9xl px-4 py-3">HTML</p>
-        </div>
-
+<!-- 
         <div id="html_info" class="flex bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-600 px-4 py-2">
             <p class="w-full text-mono text-3xl text-white">HTML stands for Hyper Text Markup Language. It was created
                 by Sir Tim Berners-Lee in late 1991 but was not officially released. It is one of the three core
@@ -50,11 +49,11 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     <!-- CSS: -->
 
-    <div id="CSS">
+    <!-- <div id="CSS">
 
         <div id="css_Heading"
             class="flex justify-center bg-gradient-to-r from-teal-300 via-cyan-500 to-teal-300 text-white font-mono font-extrabold border-4 border-solid border-black">
@@ -80,12 +79,179 @@
             <div id="comWebpage" class="p-4 text- underline flex">
                 <img src="https://th.bing.com/th/id/OIP.LFRiEgXLEUqcWuJxPzeL9wHaHa?pid=ImgDet&rs=1"
                     class="h-8 px-2 w-auto">
-                <a href="company.html" class="text-2xl font-mono font-bold">Example company webpage</a>
+                <a href="login.html" class="text-2xl font-mono font-bold">Example company webpage</a>
+            </div>
+            <div id="animations" class="p-4 text- underline flex">
+                <img src="https://th.bing.com/th/id/OIP.LFRiEgXLEUqcWuJxPzeL9wHaHa?pid=ImgDet&rs=1" class="h-8 px-2 w-auto">
+                <a href="animations.html" class="text-2xl font-mono font-bold">Some animations created using CSS</a>
             </div>
 
         </div>
 
-    </div>
+    </div> -->
+
+    <!-- JavaScript -->
+
+    <!-- I will add information later on when I change the theme and stuff -->
+    <!-- 
+    <div id="jsExamples" class="bg-gradient-to-r from-yellow-500 via-yellow-200 to-amber-300">
+    
+        <div id="comWebpageUpdated" class="p-4 text- underline flex">
+            <img src="https://th.bing.com/th/id/OIP.LFRiEgXLEUqcWuJxPzeL9wHaHa?pid=ImgDet&rs=1" class="h-8 px-2 w-auto">
+            <a href="login_2.html" class="text-2xl font-mono font-bold">Example company webpage (Improved)</a>
+        </div>
+        <div id="animations" class="p-4 text- underline flex">
+            <img src="https://th.bing.com/th/id/OIP.LFRiEgXLEUqcWuJxPzeL9wHaHa?pid=ImgDet&rs=1" class="h-8 px-2 w-auto">
+            <a onclick="thinking()" class="text-2xl font-mono font-bold">Thinking</a>
+        </div>
+    
+    </div> -->
+
+    <main class="w-full mx-auto relative ">
+        <div id="blackend" class="bg-black opacity-40 h-[772px] w-full absolute z-20"></div>
+        <div id="slider" class="w-full h-[777px] overflow-x-hidden absolute z-10">
+            <img src="img/laptop-web-dev.jpg" class=" relative bottom-32 h-[900px] w-full">
+        </div>
+        <div id="contentSlide" class="slide absolute z-30">
+            <div id="logo_and_heading"
+                class="w-max h-[10px] mx-[75%] z-30 text-white font-mono font-bold text-4xl relative mt-5">
+                <p>Computer Science Exhibition 2023</p>
+            </div>
+            <div id="html" class="h-[40px] w-max flex absolute z-30 mt-44 ml-24">
+                <div id="html_logo_heading" class="">
+                    <div id="HTML_logo">
+                        <img src="img/HTML_logo.svg" class="h-96 py-10 bg-black bg-opacity-40 rounded-sm">
+                    </div>
+                </div>
+                <div id="html_info" class="relative z-30 mt-24 ml-10 text-center w-[800px] bg-black bg-opacity-40 rounded-sm">
+                    <p class="w-full font-mono text-3xl bg-clip-text text-transparent bg-gradient-to-r from-[#E44D26] to-yellow-500">HTML stands for Hyper Text Markup Language. It was created by Sir Tim Berners-Lee in late 1991 but was not officially released. It is one of the three core languages used to make a website. It describes the structure of a website. We can use it to share information, create forms or even download files.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <img src="img/comp-exhibiton-logo.svg" class="h-96 w-auto">
+
+    <!-- <button onclick="goPrev()">&lt;</button> -->
+    <!-- <button onclick="goNext()">&gt;</button> -->
+    <script>
+        let img1 = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+        let img4 = document.getElementById("img4");
+        let images = [img1, img2, img3, img4];
+
+        img1.style.left = "0%";
+        img2.style.left = "100%";
+        img3.style.left = "200%";
+        img4.style.left = "300%";
+
+        console.log(images);
+        let counter = 1;
+        let originalCounter;
+
+        const goNext = () => {
+            originalCounter = counter;
+            counter++;
+            slideImageRight();
+            console.log(originalCounter);
+            // console.log(counter);
+        }
+
+        const goPrev = () => {
+            originalCounter = counter;
+            counter--;
+            slideImageLeft();
+            console.log(originalCounter);
+            // console.log(counter);
+        }
+
+        const slideImageLeft = () => {
+
+            if (counter <= 1) {
+                counter = 1;
+            }
+            else if (counter >= 4) {
+                counter = 4;
+            }
+
+            if (counter == 1) {
+                img1.style.left = "0%";
+                img2.style.left = "100%";
+                img3.style.left = "200%";
+                img4.style.left = "300%";
+            }
+
+            else if (counter == 2) {
+                img1.style.left = "-100%";
+                img2.style.left = "0%";
+                img3.style.left = "100%";
+                img4.style.left = "200%";
+            }
+
+            else if (counter == 3) {
+                img1.style.left = "-200%";
+                img2.style.left = "-100%";
+                img3.style.left = "0%";
+                img4.style.left = "100%";
+            }
+
+            else if (counter == 4) {
+                img1.style.left = "-300%";
+                img2.style.left = "-200%";
+                img3.style.left = "-100%";
+                img4.style.left = "0%";
+            }
+
+        }
+        const slideImageRight = () => {
+
+            if (counter <= 1) {
+                counter = 1;
+            }
+            else if (counter >= 4) {
+                counter = 4;
+            }
+
+            if (counter == 1) {
+                img1.style.left = "0%";
+                img2.style.left = "100%";
+                img3.style.left = "200%";
+                img4.style.left = "300%";
+            }
+
+            else if (counter == 2) {
+                img1.style.left = "-100%";
+                img2.style.left = "0%";
+                img3.style.left = "100%";
+                img4.style.left = "200%";
+            }
+
+            else if (counter == 3) {
+                img1.style.left = "-200%";
+                img2.style.left = "-100%";
+                img3.style.left = "0%";
+                img4.style.left = "100%";
+            }
+
+            else if (counter == 4) {
+                img1.style.left = "-300%";
+                img2.style.left = "-200%";
+                img3.style.left = "-100%";
+                img4.style.left = "0%";
+            }
+
+        }
+
+    </script>
+    <script>
+        function thinking() {
+            alert("Thinking");
+        }
+    </script>
+
+
+</body>
 
 </html>
 <!-- from-teal-300 via-cyan-500 to-teal-300 -->

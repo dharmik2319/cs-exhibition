@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Website Improved with the help of JavaScript</title>
+    <style>
+         #welcome {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        #welcome.fade {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body onload="welcome()">
+
+    <body>
+        <div id="welcome" class="fade fixed z-50 h-[500px] w-[700px] top-24 mx-[26%] ">
+            <div id="welcomeBox" class="bg-white h-[500px] border-solid border-2 border-slate-500">
+                <button onclick="hideWelcome()"><img src="img/cross-small-svgrepo-com.svg" class="h-14 opacity-40 w-auto ml-[620px] mt-5 hover:border-solid hover:border-black hover:border-2 transition-all duration-100"></button>
+                <div class="flex justify-center">
+                    <img src="img/tick-inside-a-circle-svgrepo-com.svg" class="h-48">
+                </div>
+                <p class="flex justify-center mt-7 text-lime-500 font-mono text-3xl font-bold">Successfully logged in</p>
+                <div class="flex">
+                    <p class="text-slate-500 font-mono font-bold text-xl pl-32 pt-5">You are logged in as: </p> <p class="text-sky-500 font-mono font-extrabold text-2xl pl-1 pt-[18px]">user@saintPauls</p>
+                </div>
+                <div class="flex">
+                    <p class="text-slate-500 font-mono font-bold text-xl pl-32 pt-5">Your Password is: </p> <p class="text-transparent font-mono font-extrabold text-2xl ml-2 mt-[19px] h-8 bg-slate-300 rounded-full">abcdefghijkl</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-br from-sky-500 via-fuchsia-300 to-fuchsia-300 ">
+            <nav class="text-white flex justify-between">
+                <span class="text-2xl py-4 px-3 font-extrabold font-mono hover:text-black hover:text-3xl transition-all duration-100"><a href="index.html">Your |
+                        Company</a></span>
+                <ul class="px-16 py-4 flex space-x-11 text-white font-bold justify-end transition-all duration-100">
+                    <li class="cursor-pointer hover:text-black text-2xl mt-1 hover:text-3xl transition-all duration-100"><a href="#about">About Us</a></li>
+                    <li class="cursor-pointer hover:text-black text-2xl mt-1 hover:text-3xl transition-all duration-100"><a href="#products">Products</a></li>
+                    <li class="cursor-pointer hover:text-black text-2xl mt-1 hover:text-3xl transition-all duration-100"><a href="#contact">Contact</a></li>
+                    <li class="cursor-pointer hover:text-gray-800 text-2xl transition-all duration-100"><a href="company_2.html"><button
+                                class="flex rounded-full bg-sky-500 border-solid border-black border-2 px-3 py-1">Proceed
+                                <img src="img/arrow.svg" class="h-8 w-auto px-1"></button></a></li>
+                </ul>
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,96L60,117.3C120,139,240,181,360,170.7C480,160,600,96,720,96C840,96,960,160,1080,181.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div id="about" class="w-full">
+            <span class="flex text-black font-bold text-3xl font-mono my-3 justify-center">About our Founders</span>
+            <div id="founders" class="flex justify-between">
+                <div class="border border-blue-300 shadow rounded-md p-4 w-[20rem] mx-[1rem] my-[1px]">
+                    <div class="animate-pulse flex space-x-4">
+                        <div class="rounded-full bg-slate-200 h-10 w-10"></div>
+                        <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-200 rounded"></div>
+                            <div class="space-y-3">
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                    <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                </div>
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-blue-300 shadow rounded-md p-4 w-[20rem] mx-[1rem] my-[1px]">
+                    <div class="animate-pulse flex space-x-4">
+                        <div class="rounded-full bg-slate-200 h-10 w-10"></div>
+                        <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-200 rounded"></div>
+                            <div class="space-y-3">
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                    <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                </div>
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-blue-300 shadow rounded-md p-4 w-[20rem] mx-[1rem] my-[1px]">
+                    <div class="animate-pulse flex space-x-4">
+                        <div class="rounded-full bg-slate-200 h-10 w-10"></div>
+                        <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-200 rounded"></div>
+                            <div class="space-y-3">
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                    <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                </div>
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-blue-300 shadow rounded-md p-4 w-[20rem] mx-[1rem] my-[1px]">
+                    <div class="animate-pulse flex space-x-4">
+                        <div class="rounded-full bg-slate-200 h-10 w-10"></div>
+                        <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-200 rounded"></div>
+                            <div class="space-y-3">
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                    <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                </div>
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="flex text-black font-bold text-3xl font-mono py-12 justify-center">About our Team</span>
+            <div id="staff" class="flex w-full">
+                <div id="staff_txt"
+                    class=" text-xl font-mono font-bold m-8 h-96 w-[50rem] border-solid border-black border-2 rounded-lg bg-gradient-to-br from-sky-300 via-fuchsia-100 to-fuchsia-100">
+                    <div id="line_1" class="flex">
+                        <div id="txt_1_1" class="flex h-12 w-auto p-2 ">
+                            We have a staff of
+                            <div id="spoiler_number"
+                                class="h-6 w-auto mx-2 my-1 bg-slate-400 animate-pulse text-transparent rounded-lg">
+                                abcdefg
+                            </div>
+                            people.
+                        </div>
+                        <div id="txt_1_2" class="flex h-12 w-auto py-2 ">
+                            We have developers who help us
+                        </div>
+                    </div>
+                    <div id="line-2" class="flex p-2">
+                        <div id="txt_2_1" class="flex"></div>
+                        provide you with services like
+                    </div>
+                    <div id="txt_2_2"
+                        class="w-[408px] h-8 bg-slate-400 animate-pulse text-transparent rounded-lg mx-[22rem] -my-[35px]">
+                        Lorem ipsum dolor sit amet consectetur
+                    </div>
+                    <div id="txt_2_3" class="mx-[760px] my-[10px]"> . </div>
+                    <div id="line_3" class="px-2 my-3">
+                        We also provide you with a 24/7 customer support service. our Team is
+                    </div>
+                    <div id="line_4" class="p-2">
+                        motivated to complete your work before deadline. The products designed
+                    </div>
+                    <div id="line_5" class="p-2">
+                        by our team are cheaper and are of superior quality than those designed
+                    </div>
+                    <div id="line_6" class="p-2">
+                        <div id="txt_6_1">
+                            by other companies.
+                        </div>
+                        <div id="txt_6_2"
+                            class="w-[550px] h-8 bg-slate-300 animate-pulse text-transparent rounded-lg mx-[14rem] -my-[30px]">
+                            <!-- 	 -->
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                    </div>
+                    <div id="line_7" class="h-8 w-[97%] bg-slate-300 animate-pulse rounded-lg mx-2 my-8"></div>
+                    <div id="line_8" class="h-8 w-[97%] bg-slate-300 animate-pulse rounded-lg mx-2 -my-4"></div>
+                </div>
+                <div id="staff_img">
+                    <img src="img/illustration.svg" class="flex mx-[2px] my-8 h-[25rem] w-auto">
+                </div>
+            </div>
+        </div>
+        <div id="products">
+            <div id="waves_2" class="bg-gradient-to-br from-sky-500 via-fuchsia-300 to-fuchsia-300 h-full">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,128L40,133.3C80,139,160,149,240,133.3C320,117,400,75,480,80C560,85,640,139,720,170.7C800,203,880,213,960,218.7C1040,224,1120,224,1200,197.3C1280,171,1360,117,1400,90.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+                    </path>
+                </svg>
+                <div id="products_label" class="text-white font-mono text-4xl pb-10 flex justify-center">Best of our
+                    Products</div>
+            </div>
+            <div id="featured_Products_1" class="mx-4 my-8 flex justify-center">
+                <div id="product_1">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product_2">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product_3">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="featured_Products_2" class="flex mx-4 my-8 justify-center">
+                <div id="product_4">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product_5">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product_6">
+                    <div class="border border-blue-300 shadow rounded-md p-4 w-[24rem] mx-[1rem] my-[1px]">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="rounded-none bg-slate-200 h-[100px] w-[100px]"></div>
+                            <div class="flex-1 space-y-6 py-1">
+                                <div class="h-2 bg-slate-200 rounded"></div>
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                                        <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                                    </div>
+                                    <div class="h-2 bg-slate-200 rounded"></div>
+                                    <div class="flex">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                        <img src="img/star-svgrepo-com.svg" class="h-5 w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div id="waves_2" class="bg-[#232629]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,160L60,144C120,128,240,96,360,96C480,96,600,128,720,117.3C840,107,960,53,1080,64C1200,75,1320,149,1380,186.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+            <div id="extended_waves" class="bg-[#232629] w-full h-56 text-white  font-bold font-mono">
+                <div id="contact_logo" class="text-5xl flex justify-center -my-48 h-12 w-auto"> Contact details </div>
+            </div>
+            <div id="contact_details_1" class="h-2 w-2 bg-white rounded-full -my-40 mx-8"></div>
+            <div id="contact_email" class="font-bold font-mono text-2xl text-white my-[140px] mx-12">
+                Your|Company@domain.com
+            </div>
+            <div id="contact_details_2" class="h-2 w-2 bg-white rounded-full -my-[7rem] mx-8"></div>
+            <div id="contact_phone" class="font-bold font-mono text-2xl text-white my-[94px] mx-12">91+ 75981 40633 /
+                91+
+                78875 67224 / 91+ 72817 60473</div>
+        </div>
+
+        <script>
+            let bodyObj = document.querySelector("body");
+            // console.log(bodyObj);
+            let welcomeObj = document.getElementById("welcome");
+            // console.log(boxObj);
+
+            function welcome() {
+                bodyObj.style.overflow = "hidden";
+                welcomeObj.classList.toggle('fade');                    
+                welcomeObj.style.visibility = "visible"
+            }
+            
+            function hideWelcome() {
+                welcomeObj.classList.toggle('fade');
+                setTimeout(() => {   
+                    welcomeObj.style.display = "none";              
+                }, 2000);
+                bodyObj.style.overflowY = "visible";
+            }
+        </script>
+    </body>
+</body>
+
+</html>

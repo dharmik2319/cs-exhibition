@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to website</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #F0ABFC, #334498, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            /* height: 100vh; */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body class="overflow-y-hidden">
+    <form action="company.html" class="bg-gradient-to-br from-sky-500 via-fuchsia-300 to-fuchsia-300 h-[450px] w-[425px] mx-auto my-[10%] border-solid border-4 border-black justify-center items-center rounded-lg">
+        <p class="font-mono font-bold text-white text-3xl text-center h-11 mt-14 shadow-white">Please login</p>
+        <input type="text" placeholder="Username"
+            class="mx-[18%] rounded-full focus:border-hidden px-10 text-center h-10 mt-16 border-solid border-4 focus:shadow-none focus:border-lime-400 focus:text-center focus:mx-[19%] focus:h-[36px] focus:mt-[64px] border-sky-500 bg-black font-mono text-white shadow-sky-400 shadow-md">
+        <input type="password" placeholder="Password"
+            class="mx-[18%] rounded-full focus:border-hidden px-10 text-center h-10 mt-10 border-solid border-4 focus:shadow-none focus:border-lime-400 focus:text-center focus:mx-[19%] focus:h-[36px] focus:mt-[40px] border-sky-500 bg-black font-mono text-white shadow-sky-400 shadow-md">
+        <input type="submit" value="Login"
+            class="h-10 w-48 bg-sky-500 rounded-full pl-[72px] pr-16 text-center mx-[26%] mt-12 cursor-pointer shadow-sky-400 shadow-md">
+    </form>
+    <script>
+        
+    </script>
+</body>
+
+</html>

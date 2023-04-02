@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company file src</title>
+</head>
+
+<body>
+    <div id="editorContainer" class="mt-5">
+        <div id="editor">
+        </div>
+    </div>
+    <script src="ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="company.js"></script> -->
+
+    <div id="back" class="flex justify-center mt-8 mb-8">
+        <button class="bg-sky-500 rounded-full flex">
+            <a href="company_2.html" class="flex text-white text-5xl font-bold font-mono px-2 ">
+                <img src="img/left-arrow.svg" class="h-16 w-auto">
+                <p class="px-2 pt-[8px]">Go back</p>
+            </a>
+        </button>
+    </div>
+
+    <script>
+        var editor = ace.edit("editor");
+            editor.setTheme("ace/theme/twilight");
+            editor.session.setMode("ace/mode/html");
+            editor.setReadOnly(true);
+            editor.setAutoScrollEditorIntoView(true);
+
+            function makeAceEditorResizable(editor) {
+                // mouseup = css resize end
+                document.addEventListener("mouseup", function (e) {
+                    editor.resize();
+                });
+            }
+
+            var aceEditorInstance = ace.edit("editor");
+            makeAceEditorResizable(aceEditorInstance);
+
+
+            function fetchHtml() {
+                fetch('company++.html')
+                    .then((response) => {
+                        return response.text();
+                    })
+                    .then((html) => {
+                        editor.setValue(html)
+                    })
+
+            }
+
+            function putLines(lines) {
+                editor.setOption("maxLines", lines);
+            }
+            editor.setFontSize(13);
+            /* abandon all hope if you wish to understand this
+             * dont touch it as well, if it aint broke, dont fix it*/
+            function resolveAfter2Seconds() {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve('resolved');
+                    }, 200);
+                });
+            }
+
+            async function asyncCall() {
+                fetchHtml();
+                const result = await resolveAfter2Seconds();
+                putLines(editor.getValue().match(/\n/g).length + 1); // Expected output: "resolved"
+            }
+
+            asyncCall();
+        
+
+    </script>
+</body>
+
+</html>
