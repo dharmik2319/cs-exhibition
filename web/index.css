@@ -30,7 +30,7 @@ a:hover {
 	color: purple;
 }
 img {
-		transition: scale 1s;
+		transition: scale 0.4s;
 }
 img.complogo{
 	position: relative;
