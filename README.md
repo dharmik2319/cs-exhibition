@@ -1,14 +1,18 @@
 # Introduction
-This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.
+This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.  
 
 ## Files & Folders
-- ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project.
-- This is the [`README.md`](/README.md).
+- ***IMPORTANT!*** Go through the [workflow](#Workflow) to understand how you will be working on this project. 
+- This is the [`README.md`](/README.md). 
 - The [`budget.md`](/budget.md) file is for listing the components we will be using and their prices and links
 - The [`AI` folder](/AI/) is for files concerning AI, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
 - The [`ATM` folder](/ATM/) is for files concerning the ATM project, so you may put appropriate files in those folers (by forking the repo and creating a pull request).
 - The [`web` folder](/ATM/) is for files concerning the web portion (html, css & js), so you may put appropriate files in those folers (by forking the repo and creating a pull request).
+	- The [`img` folder](/web/img) contains various images required for the webpages.
+	- The [`anm` folder](/web/anm) contains css animations created by Haard, and they may be previewed by going to [https://dharmik2319.github.io/anm/css_effect_1/index.html](https://dharmik2319.github.io/anm/css_effect_1/index.html), where you may replace 1 with any number upto 21.
+
 - In all these folders, there will be filler files named `filler`. You may remove them after you create atleast one other file in that folder.
+- You can see a preview of the planned site [here](https://dharmik2319.github.io).
   
 # A few Instructions
 - First of all, sign in to [GitHub](https://github.com). I hope you know how to do that.

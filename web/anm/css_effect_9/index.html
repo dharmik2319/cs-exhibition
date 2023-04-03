@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>My Css Effect 9</title>
+      <link rel="stylesheet" href="style9.css">
+    </head>
+    <body>
+        <section>
+            <audio id="audio" src="sound.wav" autostart=false></audio>
+        </section>
+        <script type="text/javascript">
+            document.addEventListener("click",function(e)
+            {
+                var body =document.querySelector('body')
+                var bullet =document.createElement('span');
+                var x = e.offsetX;
+                var y = e.offsetY;
+                bullet.style.left = x+'px';
+                bullet.style.top = y+'px';
+                body.appendChild(bullet);
+
+                var audio = document.getElementById('audio');
+                audio.play
+
+            })
+        </script>
+    </body>
+</html>

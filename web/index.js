@@ -16,7 +16,12 @@ makeAceEditorResizable(aceEditorInstance);
 
 
 function fetchHtml() {
-	fetch(window.location.href)
+		if (window.location.href.includes("company_src")) {
+				urlink = 'company.html'
+		} else {
+				urlink = window.location.href
+		}
+	fetch(urlink)
 		.then((response) => {
 			return response.text();
 		})
@@ -36,7 +41,7 @@ function resolveAfter2Seconds() {
 	return new Promise(resolve => {
 		setTimeout(() => {
 			resolve('resolved');
-		}, 200);
+		}, 300);
 	});
 }
 

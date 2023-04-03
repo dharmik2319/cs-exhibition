@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Css Effect 20</title>
+        <link rel="stylesheet" href="style20.css">
+    </head>
+    <body>
+        <div id="text" contenteditable="">Text</div>
+        <script type="text/javascript">
+            var text = document.getElementById('text')
+            var shadow = '';
+            for(var i = 0; i < 500; i++)
+            {
+                shadow += (shadow? ',':'')+ i*1+'px '+ i*1+'px 0 #01ded3';
+            }
+            text.style.textShadow = shadow;
+        </script>
+    </body>
+</html>

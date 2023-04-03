@@ -26,3 +26,12 @@ a {
 	transition: color 1s;
 }
 
+
+a:hover {
+	color: purple;
+}
+
+img.complogo{
+	position: relative;
+	margin-right: 15px;
+  }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Css Effect 16</title>
+        <link rel="stylesheet" href="style16.css">
+    </head>
+    <body>
+        <script>
+            document.addEventListener('mousemove', function(e){
+                let body = document.querySelector('body');
+                let heart = document.createElement('span');
+                let x = e.offsetX;
+                let y = e.offsetY;
+                heart.style.left = x+'px';
+                heart.style.top = y+'px';
+
+                body.appendChild(heart);
+
+                setTimeout(function(){
+                    heart.remove();
+
+                },1000)
+            })
+        </script>
+    </body>
+</html>

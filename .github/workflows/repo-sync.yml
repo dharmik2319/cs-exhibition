@@ -1,0 +1,18 @@
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+jobs:
+  repo-sync:
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2.3.0
+      with:
+        source_repo: "https://github.com/dharmik2319/cs-exhibition.git"
+        source_branch: "main"
+        destination_branch: "testing"
+        github_token: ${{ secrets.PAT }}
