@@ -26,6 +26,7 @@ a {
 	transition: color 1s;
 }
 
+
 a:hover {
 	color: purple;
 }
@@ -33,3 +34,4 @@ a:hover {
 img.complogo{
 	position: relative;
 	margin-right: 15px;
+  }
