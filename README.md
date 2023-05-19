@@ -1,3 +1,6 @@
+# Archival Notice
+Due to the exhibition long being over, this repo will be archived.
+
 # Introduction
 This is the repository for 8th Standard Computer Exhibition projects at Saint Paul's School.  
 
